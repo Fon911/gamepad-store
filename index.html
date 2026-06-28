@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulse — геймпады для тех, кто играет всерьёз</title>
+  <meta
+    name="description"
+    content="Беспроводные геймпады DualSense, Xbox и 8BitDo. Тактильная отдача, адаптивные курки и часы автономности."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ HERO ============ -->
+  <header class="hero" aria-labelledby="hero-title">
+    <img
+      class="hero__img"
+      src="images/hero.jpg"
+      alt="Белый беспроводной геймпад крупным планом в мягком дневном свете"
+      onerror="this.classList.add('is-broken')"
+    />
+    <div class="hero__veil" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <h1 class="hero__title" id="hero-title">
+        Точность,<br />
+        которую чувствуешь
+      </h1>
+
+      <p class="hero__subtitle">
+        Беспроводные геймпады DualSense, Xbox и&nbsp;8BitDo. Тактильная отдача,
+        адаптивные курки и&nbsp;часы автономности — собрано для тех, кто играет
+        всерьёз.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--accent" href="#catalog">В каталог</a>
+        <a class="btn btn--ghost" href="#catalog">Подробнее</a>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#catalog" aria-label="Перейти к каталогу">
+      <span class="hero__scroll-line" aria-hidden="true"></span>
+    </a>
+  </header>
+
+  <!-- ============ CATALOG ============ -->
+  <main>
+    <section class="catalog" id="catalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="catalog__head">
+          <h2 class="catalog__title" id="catalog-title">Популярные модели</h2>
+          <p class="catalog__subtitle">Беспроводные геймпады в наличии</p>
+        </div>
+
+        <div class="catalog__grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card__media">
+              <img
+                class="card__img"
+                src="images/dualsense.jpg"
+                alt="Геймпад Sony DualSense на светлом фоне"
+                width="600"
+                height="450"
+                loading="lazy"
+                onerror="this.classList.add('is-broken')"
+              />
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Sony DualSense</h3>
+              <p class="card__price">44&nbsp;990&nbsp;₸</p>
+              <button class="btn btn--accent card__btn" type="button">В корзину</button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card__media">
+              <img
+                class="card__img"
+                src="images/xbox.jpg"
+                alt="Белый геймпад Xbox на светлом деревянном фоне"
+                width="600"
+                height="450"
+                loading="lazy"
+                onerror="this.classList.add('is-broken')"
+              />
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">Xbox Wireless</h3>
+              <p class="card__price">39&nbsp;990&nbsp;₸</p>
+              <button class="btn btn--accent card__btn" type="button">В корзину</button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card__media">
+              <img
+                class="card__img"
+                src="images/retro.jpg"
+                alt="Ретро-геймпад в стиле SNES на жёлтом фоне"
+                width="600"
+                height="450"
+                loading="lazy"
+                onerror="this.classList.add('is-broken')"
+              />
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">8BitDo SN30</h3>
+              <p class="card__price">24&nbsp;990&nbsp;₸</p>
+              <button class="btn btn--accent card__btn" type="button">В корзину</button>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card">
+            <div class="card__media">
+              <img
+                class="card__img card__img--bottom"
+                src="images/dualsense-edge.jpg"
+                alt="Геймпад Sony DualSense Edge на белом фоне"
+                width="600"
+                height="450"
+                loading="lazy"
+                onerror="this.classList.add('is-broken')"
+              />
+            </div>
+            <div class="card__body">
+              <h3 class="card__name">DualSense Edge</h3>
+              <p class="card__price">119&nbsp;990&nbsp;₸</p>
+              <button class="btn btn--accent card__btn" type="button">В корзину</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
