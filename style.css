@@ -281,24 +281,24 @@ h3 {
 .card {
   display: flex;
   flex-direction: column;
+  padding: 14px;
   background-color: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-rest);
-  transition: transform var(--ease-soft), border-color var(--ease-soft),
-    box-shadow var(--ease-soft);
+  border-radius: 24px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04),
+    0 22px 48px -30px rgba(79, 70, 229, 0.25);
+  transition: transform var(--ease-soft), box-shadow var(--ease-soft);
 }
 
 .card:hover {
   transform: translateY(-6px);
-  border-color: var(--accent);
-  box-shadow: var(--shadow-hover);
+  box-shadow: 0 2px 6px rgba(16, 24, 40, 0.06),
+    0 36px 64px -30px rgba(79, 70, 229, 0.42);
 }
 
 .card__media {
-  aspect-ratio: 4 / 3;
-  background: linear-gradient(160deg, #F3F1FC 0%, #E9E6F6 100%);
+  aspect-ratio: 1 / 1;
+  border-radius: 16px;
+  background: linear-gradient(155deg, #F4F2FD 0%, #E7E3F5 100%);
   overflow: hidden;
 }
 
@@ -306,22 +306,22 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform var(--ease-soft);
+  transition: transform 0.45s ease;
 }
 
 .card:hover .card__img {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 .card__body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: var(--space-3);
+  padding: var(--space-2) var(--space-1) var(--space-1);
 }
 
 .card__name {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.015em;
@@ -332,22 +332,52 @@ h3 {
   color: var(--muted);
   font-size: 13px;
   font-weight: 500;
-  letter-spacing: 0.01em;
+}
+
+.card__foot {
+  margin-top: auto;
+  padding-top: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
 }
 
 .card__price {
-  margin-top: var(--space-2);
-  margin-bottom: var(--space-3);
-  color: var(--accent);
-  font-size: 21px;
+  color: var(--text);
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: -0.01em;
   font-variant-numeric: tabular-nums;
 }
 
-.card__btn {
-  margin-top: auto;
-  width: 100%;
+.card__add {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(79, 70, 229, 0.7);
+  transition: transform var(--ease), background-color var(--ease);
+}
+
+.card__add:hover {
+  background-color: var(--accent-hover);
+  transform: scale(1.07);
+}
+
+.card__add:active {
+  transform: scale(1);
+}
+
+.card__add svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* ============ Broken-image fallback ============ */
