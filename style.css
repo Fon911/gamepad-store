@@ -296,10 +296,6 @@ h3 {
   transition: transform var(--ease-soft);
 }
 
-.card__img--bottom {
-  object-position: center 70%;
-}
-
 .card:hover .card__img {
   transform: scale(1.04);
 }
